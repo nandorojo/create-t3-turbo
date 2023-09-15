@@ -26,10 +26,10 @@ jobs:
         with:
           bun-version: latest
 
-      - name: Setup Node 18
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      # - name: Setup Node 18
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: 18
 
       - name: Install deps (with cache)
         run: bun install
