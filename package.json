@@ -30,5 +30,6 @@
     "turbo": "1.10.14-canary.2",
     "typescript": "^5.2.2"
   },
-  "prettier": "@acme/prettier-config"
+  "prettier": "@acme/prettier-config",
+  "packageManager": "bun@1.0.1"
 }
