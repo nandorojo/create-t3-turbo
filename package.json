@@ -4,7 +4,11 @@
   "engines": {
     "node": ">=v18.17.1"
   },
-  "packageManager": "pnpm@8.7.5",
+  "workspaces": [
+    "apps/*",
+    "packages/*",
+    "tooling/*"
+  ],
   "scripts": {
     "build": "turbo build",
     "clean": "git clean -xdf node_modules",
@@ -19,11 +23,11 @@
     "typecheck": "turbo typecheck"
   },
   "dependencies": {
-    "@acme/prettier-config": "^0.1.0",
+    "@acme/prettier-config": "workspace:*",
     "@manypkg/cli": "^0.21.0",
     "@turbo/gen": "^1.10.13",
     "prettier": "^3.0.3",
-    "turbo": "^1.10.13",
+    "turbo": "1.10.14-canary.2",
     "typescript": "^5.2.2"
   },
   "prettier": "@acme/prettier-config"
