@@ -31,14 +31,6 @@ jobs:
         with:
           node-version: 18
 
-      # - name: Setup pnpm cache
-      #   uses: actions/cache@v3
-      #   with:
-      #     path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
-      #     key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-pnpm-store-
-
       - name: Install deps (with cache)
         run: bun install
 
@@ -47,4 +39,4 @@ jobs:
 
       # TODO: Find a suitable replacement for manypkg / wait for Bun support
       # - name: Check workspaces
-      #   run: pnpm manypkg check
+      #   run: bun manypkg check
