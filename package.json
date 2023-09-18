@@ -1,6 +1,7 @@
 {
   "name": "create-t3-turbo",
   "private": true,
+  "packageManager": "bun@1.0.2",
   "engines": {
     "node": ">=v18.17.1"
   },
@@ -30,6 +31,5 @@
     "turbo": "1.10.14-canary.2",
     "typescript": "^5.2.2"
   },
-  "prettier": "@acme/prettier-config",
-  "packageManager": "bun@1.0.1"
+  "prettier": "@acme/prettier-config"
 }
