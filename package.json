@@ -3,7 +3,7 @@
   "private": true,
   "packageManager": "bun@1.0.2",
   "engines": {
-    "node": ">=v18.17.1"
+    "node": ">=v18.18.0"
   },
   "workspaces": [
     "apps/*",
@@ -26,9 +26,9 @@
   "devDependencies": {
     "@acme/prettier-config": "workspace:*",
     "@manypkg/cli": "^0.21.0",
-    "@turbo/gen": "^1.10.13",
+    "@turbo/gen": "^1.10.14",
     "prettier": "^3.0.3",
-    "turbo": "1.10.14-canary.2",
+    "turbo": "^1.10.14",
     "typescript": "^5.2.2"
   },
   "prettier": "@acme/prettier-config"
